@@ -490,7 +490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185895896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.9, y: 0.4, z: 1}
+  m_LocalPosition: {x: 8, y: 0.4, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -650,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582014045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.58, z: 0}
+  m_LocalPosition: {x: 0, y: -0.78, z: 0}
   m_LocalScale: {x: 2.7875, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1150,6 +1150,7 @@ GameObject:
   - component: {fileID: 1935305518}
   - component: {fileID: 1935305517}
   - component: {fileID: 1935305516}
+  - component: {fileID: 1935305520}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1172,7 +1173,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.005918026, y: 0.011836529}
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.23
 --- !u!50 &1935305517
 Rigidbody2D:
   serializedVersion: 4
@@ -1192,7 +1193,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9def6c37072f1574589ea927d32c8cf2, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &1935305518
 SpriteRenderer:
@@ -1250,9 +1251,22 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935305515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 7.56, z: 1}
+  m_LocalPosition: {x: 8, y: 0.916, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935305520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935305515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2573d2591a350f4459d3b97451c56321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddle1: {fileID: 1185895900}
